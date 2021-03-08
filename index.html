@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Task 74 - AsciiCircle</title>
+  </head>
 
-<head>
-  <title>Task 74 - AsciiCircle</title>
-</head>
+  <body>
+    <h1>Please type a radius into the textbox</h1>
+    <br />
+    <input
+      type="number"
+      min="0"
+      max="99"
+      id="userInput"
+      placeholder="Type a number here"
+      onchange="getAscii()"
+    />
+    <input
+      type="checkbox"
+      id="smoothedCheck"
+      value="smoothed"
+      checked="true"
+      onchange="getAscii()"
+    />
+    <label for="roundedCheck">Smooth edges?</label>
+    <br />
+    <div>
+      <pre
+        style="font-family: 'Fira Code', 'Courier New', Courier, monospace"
+        id="res"
+      >
+        Result will be shown here
+      </pre>
+    </div>
 
-<body>
-  <h1>Please type a radius into the textbox</h1>
-  <br />
-  <input type="number" min="0" max="99" id="userInput" placeholder="Type a number here" onchange="getAscii()" />
-  <input type="checkbox" id="smoothedCheck" value="smoothed" checked="true" onchange="getAscii()">
-  <label for="roundedCheck">Smooth edges?</label>
-  <br />
-  <div>
-    <pre style="font-family: 'Fira Code', 'Courier New', Courier, monospace;" id="res">Result will be shown here</pre>
-  </div>
-
-  <script src="index.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
